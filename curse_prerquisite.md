@@ -50,7 +50,7 @@ Afterwards install python packages necessary for the tutorial with:
 
 To test that the installed packages are working enter  
 
-`THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python import -c 'lasagne, theano'`
+`THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python -c 'import lasagne, theano'`
 
 which should output the Cuda device that will be used.  
 
