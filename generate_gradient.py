@@ -42,7 +42,7 @@ def main(layers=None):
     training(td, net, epochs, "norms_during_training_2_layers.json")
     plot_training(
         epochs, "norms_during_training_2_layers.json", 2)
-
+0
 
 def initial_norms(training_data, net):
     average_gradient = get_average_gradient(net, training_data)
@@ -55,7 +55,7 @@ def training(training_data, net, epochs, filename):
         average_gradient = get_average_gradient(net, training_data)
         norms.append([list_norm(avg) for avg in average_gradient[:-1]])
         print "Epoch: %s" % j
-        net.SGD(training_data, 1, 1000, 0.1, lmbda=5.0)
+        net.SGD(training_data, 1, 1000, 0.1)
     f = open(filename, "w")
     json.dump(norms, f)
     f.close()
