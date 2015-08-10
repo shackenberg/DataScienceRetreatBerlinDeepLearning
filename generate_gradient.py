@@ -39,7 +39,6 @@ def main(layers=None):
     initial_norms(td, net)
     abbreviated_gradient = [
         ag[:6] for ag in get_average_gradient(net, td)[:-1]]
-    shutil.copy("initial_gradient.json", "../../js/initial_gradient.json")
     training(td, net, epochs, "norms_during_training_2_layers.json")
     plot_training(
         epochs, "norms_during_training_2_layers.json", 2)
