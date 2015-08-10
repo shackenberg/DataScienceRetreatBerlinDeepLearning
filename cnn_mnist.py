@@ -195,7 +195,7 @@ def main(model='mlp', num_epochs=500):
     # Finally, launch the training loop.
     print("Starting training...")
     # We iterate over epochs:
-    for epoch in range(num_epochs)
+    for epoch in range(num_epochs):
         # In each epoch, we do a full pass over the training data:
         train_err = 0
         train_batches = 0
