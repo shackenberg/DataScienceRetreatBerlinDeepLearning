@@ -38,13 +38,19 @@ Cuda is already installed and configured but ipython notebook and packages for m
 
 Afterwards install python packages necessary for the tutorial with:
 
-`#  installing requirements for lasagne (theano)
+`#  installing requirements for lasagne (theano)`
 
 `pip install -r https://raw.githubusercontent.com/Lasagne/Lasagne/master/requirements.txt --user --upgrade`
 
 `# installing lasagne`
 
 `pip install https://github.com/Lasagne/Lasagne/archive/master.zip --user --upgrade`
+
+If you get an `scipy` / `libblas` error run: 
+
+`sudo apt-get update`
+
+`sudo apt-get install libblas-dev liblapack-dev`
 
 #Testing
 
