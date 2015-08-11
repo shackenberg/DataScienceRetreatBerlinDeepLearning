@@ -2,7 +2,7 @@
 
 These are the prerequisites for the Deep Learning Tutorial. There are maybe as many deep learning frameworks as JavaScript frameworks, but we will concentrate on the Python Package [Lasagne](https://github.com/Lasagne/Lasagne), which was already sucessfully used for the last DSR batch and which is a wrapper around the lower level Python library [Theano](http://deeplearning.net/software/theano/). 
 
-You can install everything locally on your Mac, but I recommend to use a ec2 gpu instance, especially if you don't have a Nvidia GPU in your machine. I tested the code on the AMI Theano - CUDA 7 (ami-b141a2f5) (only US West (N. California)), which is the updated version of the one introduced in this blog post [Installing Theano on AWS](http://markus.com/install-theano-on-aws/). Please make sure to only get the small GPU instance and only as a spot instance to keep the costs low.  
+You can install everything locally on your Mac, but I recommend to use a ec2 gpu instance, especially if you don't have a Nvidia GPU in your machine. I recommend using the [Kaggle blog post deep learning tutorial](https://www.kaggle.com/c/facial-keypoints-detection/details/deep-learning-tutorial) which nicely describes how to launch an ec2 instance with an existing image. They recommend `ami-1f3e225a`, which does not exist any more. Use the updated version `ami-b141a2f5`, called  AMI Theano - CUDA 7. **(only available US West (N. California))**. Please make sure to only get the small GPU instance and only as a spot instance to keep the costs low.  Also check the spot prices, there are not as low as they were, when the kaggle blog post was written. 
 
 Just for completeness: you don't need to use a machine with a Nvidia gpu, but I heavily recommend it.
 
